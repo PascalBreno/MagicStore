@@ -38,7 +38,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
-        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem8 = new javax.swing.JMenuItem();
@@ -47,17 +47,23 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         jMenuItem11 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(700, 450));
-        setPreferredSize(new java.awt.Dimension(700, 450));
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMinimumSize(new java.awt.Dimension(600, 450));
+        setPreferredSize(new java.awt.Dimension(600, 450));
+        getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
+        jPanel1.setAlignmentX(-5.0F);
+        jPanel1.setAlignmentY(-67.0F);
+        jPanel1.setAutoscrolls(true);
+        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.setMinimumSize(new java.awt.Dimension(600, 450));
         jPanel1.setName(""); // NOI18N
         jPanel1.setPreferredSize(new java.awt.Dimension(600, 450));
         jPanel1.setRequestFocusEnabled(false);
         jPanel1.setVerifyInputWhenFocusTarget(false);
         jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.LINE_AXIS));
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, -1, 450));
+        getContentPane().add(jPanel1);
+        jPanel1.getAccessibleContext().setAccessibleName("");
 
         jMenu1.setText("Cadastros");
         jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -95,7 +101,8 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem7);
 
-        jMenu3.setText("ITENS");
+        jMenu3.setText("Mais opções");
+        jMenu3.setBorderPainted(false);
 
         jMenuItem2.setFont(new java.awt.Font("Tempus Sans ITC", 0, 12)); // NOI18N
         jMenuItem2.setText("POÇÕES");
@@ -124,14 +131,14 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem5);
 
-        jCheckBoxMenuItem1.setText("ITENS");
-        jCheckBoxMenuItem1.setContentAreaFilled(false);
-        jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem4.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        jMenuItem4.setText("ITEM");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBoxMenuItem1ActionPerformed(evt);
+                jMenuItem4ActionPerformed(evt);
             }
         });
-        jMenu3.add(jCheckBoxMenuItem1);
+        jMenu3.add(jMenuItem4);
 
         jMenu1.add(jMenu3);
 
@@ -174,6 +181,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         setJMenuBar(jMenuBar1);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
@@ -219,13 +227,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         jPanel1.setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
-    private void jCheckBoxMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem1ActionPerformed
-        jPanel1.removeAll();
-        jPanel1.add(new CadastrarItens());
-        jPanel1.setVisible(false);
-        jPanel1.setVisible(true);
-    }//GEN-LAST:event_jCheckBoxMenuItem1ActionPerformed
-
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         jPanel1.removeAll();
         jPanel1.add(new CadastrarFuncionários());
@@ -253,6 +254,13 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         jPanel1.setVisible(false);
         jPanel1.setVisible(true);
     }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        jPanel1.removeAll();
+        jPanel1.add(new CadastrarItens());
+        jPanel1.setVisible(false);
+        jPanel1.setVisible(true);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -290,7 +298,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JColorChooser jColorChooser1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -302,6 +309,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;

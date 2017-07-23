@@ -27,39 +27,162 @@
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="alignmentX" type="float" value="0.0"/>
+        <Property name="alignmentY" type="float" value="0.0"/>
+        <Property name="autoscrolls" type="boolean" value="true"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[600, 450]"/>
+        </Property>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
-                          <Component id="jTextField1" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jTextField1" min="-2" pref="188" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                          <Component id="jComboBox2" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jComboBox3" min="-2" pref="110" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                  <Component id="jTextField3" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                                  <Component id="jComboBox1" min="-2" pref="189" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jComboBox4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButton2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
-                          <Component id="jTextField2" min="-2" pref="190" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jScrollPane1" min="-2" pref="262" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jTextField2" min="-2" pref="65" max="-2" attributes="0"/>
+                              <Component id="jTextField4" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="100" pref="100" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel2" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jTextField1" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField3" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jComboBox4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel2" min="-2" pref="20" max="-2" attributes="0"/>
-                      <Component id="jTextField2" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="105" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="15" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
           </Group>
@@ -75,15 +198,163 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Digite o nome"/>
           </Properties>
+          <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextField1FocusGained"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField1MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="text" type="java.lang.String" value="Insira o Reino: "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JComboBox" name="jComboBox1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Inserir o Reino"/>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="5">
+                <StringItem index="0" value="Reino A"/>
+                <StringItem index="1" value="Reino B"/>
+                <StringItem index="2" value="Reino C"/>
+                <StringItem index="3" value="Reino D"/>
+                <StringItem index="4" value="Reino E"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Idade"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="14" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ra&#xe7;a"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jComboBox2">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Ra&#xe7;a A"/>
+                <StringItem index="1" value="Ra&#xe7;a B"/>
+                <StringItem index="2" value="Ra&#xe7;a C"/>
+                <StringItem index="3" value="Ra&#xe7;a D"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Level "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField2">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="14" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Classe"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jComboBox3">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Classe A"/>
+                <StringItem index="1" value="Classe B"/>
+                <StringItem index="2" value="Classe C"/>
+                <StringItem index="3" value="nenhuma"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Categoria de Cliente"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jComboBox4">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value="VIP"/>
+                <StringItem index="1" value="Premium"/>
+                <StringItem index="2" value="Comun"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Pre&#xe7;o"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="R$     Bronze"/>
+            <Property name="autoscrolls" type="boolean" value="false"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea1">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="5" style="0"/>
+                </Property>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="TERMO DE USO DA PLATAFORMA DE COMENT&#xc1;RIOS&#xa;&#xa;Este termo de uso de plataforma de coment&#xe1;rios (&#x201c;Termo de Uso&#x201d;) regulamenta a utiliza&#xe7;&#xe3;o da plataforma para a postagem de coment&#xe1;rios (&#x201c;Coment&#xe1;rios&#x201d;) em sites que integram o Portal Globo.com, disponibilizados pela GLOBO COMUNICA&#xc7;&#xc3;O E PARTICIPA&#xc7;&#xd5;ES S.A., empresa com sede na Cidade e Estado do Rio de Janeiro, na Rua Lopes Quintas, n&#xba; 303, inscrita no CNPJ/MF sob o n&#xba; 27.865.757/0001-02, por sua filial localizada na Avenida das Am&#xe9;ricas, n&#xba; 700, Bloco 2A, salas 101 a 316, na Cidade e Estado do Rio de Janeiro, CEP: 22.640-100, inscrita no CNPJ/MF sob n&#xba; 27.865.757/0024-90, doravante denominada simplesmente &quot;Globo.com&quot;, pela GLOBOSAT PROGRAMADORA LTDA., empresa com sede na Avenida das Am&#xe9;ricas, n&#xba; 1650, Bloco 1 - salas 304 a 308, Bloco 2 - salas 103 a 111, 118, 119, 121, 122, 125 e 126 e Bloco 05 - Loja 101, salas 201 e 301, Barra da Tijuca, na Cidade e Estado do Rio de Janeiro, inscrita no CNPJ/MF sob o n&#xba; 00.811.990/0001-48, doravante denominada simplesmente &#x201c;Globosat&#x201d; e pela EDITORA GLOBO S/A,  com sede na Avenida Jaguar&#xe9;, 1.485, S&#xe3;o Paulo/SP, CEP 05342-900, inscrita no CNPJ/MF sob o n&#xba; de 04.067.191/0001-60, doravante denominada simplesmente &#x201c;Editora&#x201d;, e quando em conjunto denominadas &#x201c;Empresas&#x201d;, aos seus usu&#xe1;rios da internet, atrav&#xe9;s do endere&#xe7;o eletr&#xf4;nico www.globo.com (&quot;Portal Globo.com&quot;). No ato de ades&#xe3;o &#xe0; Plataforma, o usu&#xe1;rio (doravante &#x201c;Usu&#xe1;rio&#x201d; ou &#x201c;Voc&#xea;&#x201d;) se obriga a aceitar, plenamente e sem reservas, todos os termos e condi&#xe7;&#xf5;es deste Termo de Uso:&#xa;&#xa;1 &#x2013; DESTINA&#xc7;&#xc3;O DA PLATAFORMA&#xa;&#xa;1.1. As Empresas disponibilizar&#xe3;o, atrav&#xe9;s dos sites que integram o Portal Globo.com, plataforma (&#x201c;Plataforma&#x201d;) interativa ao Usu&#xe1;rio, atrav&#xe9;s da qual ser&#xe1; poss&#xed;vel publicar e armazenar coment&#xe1;rios (&#x201c;Coment&#xe1;rios&#x201d;) a respeito dos conte&#xfa;dos disponibilizados nos referidos sites do Portal Globo.com (&#x201c;Produtos&#x201d;). &#xa;&#xa;1.2. A Plataforma destina-se ao debate sobre o conte&#xfa;do publicado nos sites que integram o Portal Globo.com, apenas para fins informativos e de entretenimento, excluindo qualquer utiliza&#xe7;&#xe3;o comercial ou publicit&#xe1;ria. A Plataforma e os Coment&#xe1;rios n&#xe3;o constituem aconselhamento jur&#xed;dico, financeiro, m&#xe9;dico ou profissional de qualquer natureza, pelo que n&#xe3;o dever&#xe3;o ser utilizados para tais fins.&#xa;&#xa;1.3. Os Coment&#xe1;rios feitos por Voc&#xea; ser&#xe3;o identificados como de sua autoria, sendo proibido o anonimato. Os Coment&#xe1;rios ser&#xe3;o publicados pelas Empresas sem qualquer edi&#xe7;&#xe3;o ou pr&#xe9;via modera&#xe7;&#xe3;o.&#xa;&#xa;1.4. Cada Produto do Portal poder&#xe1; definir, a seu exclusivo crit&#xe9;rio, se poder&#xe3;o ser feitos Coment&#xe1;rios sobre o conte&#xfa;do publicado, bem como o prazo em que a Plataforma ficar&#xe1; aberta para Coment&#xe1;rios.&#xa;&#xa;&#xa;2 - CADASTRO&#xa;&#xa;2.1. Para a utiliza&#xe7;&#xe3;o da Plataforma, Voc&#xea; dever&#xe1; se cadastrar, criando um login e uma senha de acesso. Caso Voc&#xea; ainda n&#xe3;o possua cadastro no Portal Globo.com, cadastre-se gratuitamente atrav&#xe9;s do endere&#xe7;o https://login.globo.com/cadastro/3004, informando seus dados pessoais (&quot;Dados Pessoais&quot;), tais como nome completo, sexo, data de nascimento, e-mail, endere&#xe7;o e n&#xfa;mero de celular v&#xe1;lido. Durante a realiza&#xe7;&#xe3;o do cadastro, Voc&#xea; precisar&#xe1; inserir um c&#xf3;digo alfanum&#xe9;rico no campo designado, c&#xf3;digo este que ser&#xe1; enviado a Voc&#xea; por SMS para o n&#xfa;mero de celular por Voc&#xea; cadastrado. Cada n&#xfa;mero de celular somente poder&#xe1; ser utilizado para a autentica&#xe7;&#xe3;o de um &#xfa;nico Usu&#xe1;rio.&#xa;&#xa;2.1.1. Ao se cadastrar, Voc&#xea; dever&#xe1; informar dados verdadeiros, que ser&#xe3;o de sua exclusiva responsabilidade. As Empresas n&#xe3;o se responsabilizam por dados falsos inseridos no cadastro.&#xa;&#xa;2.1.2. Altera&#xe7;&#xf5;es no cadastro poder&#xe3;o ser feitas por Voc&#xea; atrav&#xe9;s da Central de Relacionamento (http://globo.com/central).&#xa;&#xa;2.1.3. Lembre-se: Voc&#xea; n&#xe3;o poder&#xe1; escolher como login palavras e express&#xf5;es j&#xe1; utilizados por outros Usu&#xe1;rios;  que ofendam a terceiros; coincidentes com marcas de produtos ou servi&#xe7;os de terceiros, denomina&#xe7;&#xf5;es sociais, express&#xf5;es publicit&#xe1;rias, nomes ou pseud&#xf4;nimos de personalidades p&#xfa;blicas, de pessoas famosas ou registrados por terceiros, ou que fa&#xe7;am alus&#xe3;o a identidade destas, e tamb&#xe9;m nomes de marcas, programas, produtos ou servi&#xe7;os das Empresas ou de qualquer uma de suas sociedades direta ou indiretamente controladas, controladoras ou sob controle comum.&#xa;&#xa;2.2. Para se cadastrar sozinho, Voc&#xea; precisa ter ao menos 18 (dezoito) anos completos e ser plenamente capaz e deve fazer uma declara&#xe7;&#xe3;o nesse sentido. Se Voc&#xea; for menor de 18 (dezoito) anos ou necessitar de representa&#xe7;&#xe3;o na forma da lei, seus pais ou respons&#xe1;veis dever&#xe3;o lhe representar ou assistir. Neste caso, eles dever&#xe3;o preencher o seu cadastro e se responsabilizar&#xe3;o integralmente por Voc&#xea; e por seus atos.&#xa;&#xa;2.3. Voc&#xea; &#xe9; respons&#xe1;vel por seu login e senha de acesso. Em caso de perda ou roubo da senha de acesso, deve comunicar imediatamente &#xe0;s Empresas, atrav&#xe9;s do http://centraldeajuda.globo.com/.&#xa;&#xa;2.4. As Empresas manter&#xe3;o os Dados Pessoais, atrav&#xe9;s de seu sistema automatizado, para os usos e finalidades definidas na sua Pol&#xed;tica de Privacidade, acess&#xed;vel atrav&#xe9;s do endere&#xe7;o: http://www.globo.com/privacidade.html. Ao acessar a Plataforma, Voc&#xea; aceita a Pol&#xed;tica de Privacidade e concorda com o tratamento dos seus Dados Pessoais pelas Empresas.&#xa;&#xa;3 &#x2013; CONDI&#xc7;&#xd5;ES DE USO DA PLATAFORMA&#xa;&#xa;3.1. Ao utilizar a Plataforma, Voc&#xea; se compromete a observar o Termo de Uso, as normas e regulamentos das Empresas, a lei, a utilizar termos aceit&#xe1;veis socialmente, e a n&#xe3;o desrespeitar a ordem p&#xfa;blica.&#xa;&#xa;3.2. Voc&#xea; n&#xe3;o dever&#xe1; utilizar a Plataforma para a pr&#xe1;tica de atos proibidos pela lei e pelo presente Termo de Uso, ou atos que possam danificar, inutilizar, sobrecarregar ou deteriorar a Plataforma, os equipamentos inform&#xe1;ticos de outros usu&#xe1;rios ou de outros internautas (hardware e software), assim como os documentos, arquivos e toda classe de conte&#xfa;dos armazenados nos seus equipamentos inform&#xe1;ticos (cracking) ou impedir a normal utiliza&#xe7;&#xe3;o da referida ferramenta, equipamentos inform&#xe1;ticos e documentos, arquivos e conte&#xfa;dos por parte dos demais usu&#xe1;rios e de outros internautas.&#xa;&#xa;3.2.1. Voc&#xea; se compromete a n&#xe3;o utilizar qualquer sistema automatizado, inclusive, mas sem se limitar a &quot;rob&#xf4;s&quot;, &quot;spiders&quot; ou &quot;offline readers,&quot; que acessem a Plataforma de maneira a enviar mais mensagens de solicita&#xe7;&#xf5;es aos servidores das Empresas em um dado per&#xed;odo de tempo do que seja humanamente poss&#xed;vel responder no mesmo per&#xed;odo atrav&#xe9;s de um navegador convencional. &#xc9; igualmente vedada a coleta de qualquer informa&#xe7;&#xe3;o pessoal dos demais usu&#xe1;rios da Plataforma.&#xa;&#xa;3.3.  Voc&#xea; n&#xe3;o dever&#xe1; utilizar a Plataforma e/ou publicar Coment&#xe1;rios com a finalidade de distribuir ou incentivar qualquer ideia e/ou opini&#xe3;o que por si mesma ou cuja transmiss&#xe3;o:&#xa;&#xa;(a) Incite e/ou promova o descumprimento da lei, seja difamat&#xf3;ria, infamante, violenta, degradante, pornogr&#xe1;fica, ou, em geral, contr&#xe1;ria a ordem p&#xfa;blica;&#xa;(b) Incite e/ou promova a&#xe7;&#xf5;es ou ideias discriminat&#xf3;rias em raz&#xe3;o de ra&#xe7;a, g&#xea;nero, orienta&#xe7;&#xe3;o sexual, religi&#xe3;o, cren&#xe7;a, defici&#xea;ncia, etnia, nacionalidade ou condi&#xe7;&#xe3;o social;&#xa;(c) Constitua comportamento predat&#xf3;rio, persegui&#xe7;&#xe3;o, amea&#xe7;as, ass&#xe9;dios, intimida&#xe7;&#xf5;es ou chantagem a terceiros;&#xa;(d) Incite pr&#xe1;ticas perigosas, de risco ou nocivas &#xe0; sa&#xfa;de e ao equil&#xed;brio ps&#xed;quico;&#xa;(e) Viole segredos empresariais de terceiros;&#xa;(f) Seja contr&#xe1;ria &#xe0; honra, &#xe0; intimidade pessoal e familiar ou &#xe0; pr&#xf3;pria imagem das pessoas;&#xa;(g) Viole propriedade intelectual ou industrial de terceiros, ou contribua para tais pr&#xe1;ticas;&#xa;(h) Facilite a dissemina&#xe7;&#xe3;o ou contenha material com v&#xed;rus, dados corrompidos, ou qualquer outro elemento nocivo ou danoso;&#xa;(i) Desrespeite a legisla&#xe7;&#xe3;o eleitoral e partid&#xe1;ria;&#xa;(j) Utilize a Plataforma para fins comerciais ou publicit&#xe1;rios, compreendidos, inclusive: spam, correspond&#xea;ncia corporativa e comunica&#xe7;&#xf5;es com finalidade comercial (prospec&#xe7;&#xe3;o de neg&#xf3;cios, venda de servi&#xe7;os e mercadorias, ainda que relacionados &#xe0; pessoa f&#xed;sica, etc.) ou uso relacionado com neg&#xf3;cios, ou que anuncie ou ofere&#xe7;a a venda de produtos ou servi&#xe7;os (com ou sem fins lucrativos) ou que solicitem outros usu&#xe1;rios ou terceiros (incluindo pedidos para contribui&#xe7;&#xf5;es ou donativos).&#xa;&#xa;3.4. Caso Voc&#xea; utilize a Plataforma ou publique Coment&#xe1;rios contrariando as proibi&#xe7;&#xf5;es da cl&#xe1;usula 3.3 acima ou contrariando qualquer outra disposi&#xe7;&#xe3;o deste Termo de Uso, as Empresas poder&#xe3;o, a seu exclusivo crit&#xe9;rio, bloque&#xe1;-lo como Usu&#xe1;rio, excluir quaisquer Coment&#xe1;rios e/ou eliminar o cadastro do Usu&#xe1;rio, a qualquer tempo e sem qualquer aviso pr&#xe9;vio.&#xa;&#xa;3.5. Caso Voc&#xea; identifique que outro usu&#xe1;rio praticou qualquer ato em desobedi&#xea;ncia a este Termo de Uso, poder&#xe1; clicar no bot&#xe3;o &#x201c;Denunciar&#x201d; presente na Plataforma.&#xa;&#xa;3.5.1. A partir do recebimento de 05 (cinco) den&#xfa;ncias contra um mesmo Coment&#xe1;rio e/ou Usu&#xe1;rio, o referido coment&#xe1;rio e/ou o Usu&#xe1;rio poder&#xe3;o ser bloqueados pelas Empresas, a seu exclusivo crit&#xe9;rio, sendo que o Usu&#xe1;rio, nesta hip&#xf3;tese, n&#xe3;o mais poder&#xe1; usar a Plataforma.&#xa;&#xa;4 &#x2013; CESS&#xc3;O DE DIREITOS&#xa;&#xa;4.1. Ao aceitar este Termo de Uso, Voc&#xea; concede &#xe0;s Empresas, bem como a terceiros eventualmente por ela indicados, com exclusividade, autom&#xe1;tica e gratuitamente, uma licen&#xe7;a perp&#xe9;tua, em car&#xe1;ter irrestrito, irretrat&#xe1;vel e irrevog&#xe1;vel, para fins de utiliza&#xe7;&#xe3;o, publica&#xe7;&#xe3;o, transmiss&#xe3;o, distribui&#xe7;&#xe3;o e exibi&#xe7;&#xe3;o do conte&#xfa;do dos Coment&#xe1;rios disponibilizados por Voc&#xea;.&#xa;&#xa;4.2. As Empresas poder&#xe3;o livremente dispor dos Coment&#xe1;rios, bem como de seus extratos, trechos ou partes, dando-lhes qualquer utiliza&#xe7;&#xe3;o econ&#xf4;mica, sem que caiba a Voc&#xea; qualquer remunera&#xe7;&#xe3;o ou compensa&#xe7;&#xe3;o, podendo, exemplificativamente, utiliz&#xe1;-los para produ&#xe7;&#xe3;o de mat&#xe9;ria promocional e pe&#xe7;as publicit&#xe1;rias em qualquer tipo de m&#xed;dia, inclusive impressa, para fins de divulga&#xe7;&#xe3;o de qualquer site do Portal Globo.com; fix&#xe1;-los em qualquer tipo de suporte material, ou armazen&#xe1;-los em banco de dados; transmiti-los via r&#xe1;dio e/ou televis&#xe3;o de qualquer esp&#xe9;cie, dissemin&#xe1;-los atrav&#xe9;s da internet e/ou telefonia m&#xf3;vel ou fixa, incluindo as tecnologias de dispositivos de telas conectadas, bem como atrav&#xe9;s de jornais e revistas, impressas ou online, exibir em circuito interno, e ced&#xea;-los a terceiros, ou, ainda, dar-lhes qualquer outra utiliza&#xe7;&#xe3;o que proporcione &#xe0;s Empresas alguma esp&#xe9;cie de vantagem econ&#xf4;mica. Nenhuma das utiliza&#xe7;&#xf5;es aqui previstas tem limita&#xe7;&#xe3;o de tempo ou de n&#xfa;mero de vezes, podendo ocorrer no Brasil e/ou no exterior, a crit&#xe9;rio exclusivo das Empresas.&#xa;&#xa;4.3 Voc&#xea;, ao aceitar os Termos de Uso, manifesta a sua concord&#xe2;ncia com a utiliza&#xe7;&#xe3;o, pelas Empresas, segundo seu exclusivo crit&#xe9;rio, dos coment&#xe1;rios postados atrav&#xe9;s da Plataforma em qualquer m&#xed;dia descrita no item 4.2, incluindo cards de fan pages, associados ou n&#xe3;o &#xe0; Plataforma, mediante a divulga&#xe7;&#xe3;o do nome do Usu&#xe1;rio, e reconhece que as Empresas poder&#xe3;o adapt&#xe1;-los para adequ&#xe1;-los ao formato de cada m&#xed;dia ou plataforma tecnol&#xf3;gica.&#xa;&#xa; &#xa;&#xa;5 &#x2013; EXCLUS&#xc3;O DE GARANTIAS E DE RESPONSABILIDADE&#xa;&#xa;5.1. As Empresas n&#xe3;o t&#xea;m obriga&#xe7;&#xe3;o de controlar a utiliza&#xe7;&#xe3;o que os Usu&#xe1;rios fizerem da Plataforma. As Empresas n&#xe3;o garantem que os Usu&#xe1;rios utilizem a Plataforma em conformidade com a Lei, com este Termo de Uso ou de acordo com os valores m&#xe9;dios presumidos da sociedade e a ordem p&#xfa;blica. As Empresas tamb&#xe9;m n&#xe3;o tem a obriga&#xe7;&#xe3;o de verificar, e n&#xe3;o verifica, a identidade dos Usu&#xe1;rios, nem a veracidade, vig&#xea;ncia, e autenticidade dos dados que os Usu&#xe1;rios informam sobre si mesmos &#xe0;s Empresas, a outros usu&#xe1;rios ou a terceiros. AS EMPRESAS SE EXIMEM DE QUALQUER RESPONSABILIDADE PELOS DANOS E PREJU&#xcd;ZOS DIRETOS E/OU INDIRETOS DE QUALQUER NATUREZA QUE POSSAM SER DEVIDOS EM VIRTUDE DA UTILIZA&#xc7;&#xc3;O DA PLATAFORMA, DO CONTE&#xda;DO DISPONIBILIZADO ATRAV&#xc9;S DOS COMENT&#xc1;RIOS QUE POSSAM SER DEVIDOS &#xc0; FALTA DE VERACIDADE, VIG&#xca;NCIA E AUTENTICIDADE DA INFORMA&#xc7;&#xc3;O QUE OS USU&#xc1;RIOS FORNECEM ACERCA DE SI PR&#xd3;PRIOS E, INCLUSIVE, QUE POSSAM SER DEVIDOS EM VIRTUDE DA SIMULA&#xc7;&#xc3;O POR UM USU&#xc1;RIO DA PERSONALIDADE DE UM TERCEIRO.&#xa;&#xa;5.2. As Empresas n&#xe3;o garantem a privacidade e a seguran&#xe7;a na utiliza&#xe7;&#xe3;o da Plataforma por parte dos Usu&#xe1;rios e, em particular, n&#xe3;o garante e se exime da responsabilidade quanto &#xe0; pr&#xe1;tica por terceiros n&#xe3;o autorizados de atos de intercepta&#xe7;&#xe3;o, elimina&#xe7;&#xe3;o, altera&#xe7;&#xe3;o, modifica&#xe7;&#xe3;o ou manipula&#xe7;&#xe3;o dos Coment&#xe1;rios.&#xa;&#xa;5.3. Voc&#xea;, Usu&#xe1;rio, &#xe9; o &#xfa;nico respons&#xe1;vel pelo que escreve em seu Coment&#xe1;rio, de modo que responder&#xe1; integralmente por qualquer ofensa a direitos de terceiros que seu Coment&#xe1;rio possa causar. Ocorrendo qualquer pleito ou demanda judicial de terceiros que de qualquer modo afete as Empresas, seus diretores, empregados e colaboradores, com rela&#xe7;&#xe3;o ou em decorr&#xea;ncia dos Coment&#xe1;rios do Usu&#xe1;rio que violem o presente Termo de Uso, quaisquer leis ou regulamentos locais, nacionais ou internacionais aplic&#xe1;veis, ou quaisquer direitos de terceiros, Voc&#xea; dever&#xe1; assumir todas as responsabilidades decorrente do descumprimento de tais obriga&#xe7;&#xf5;es, bem como indenizar regressivamente as Empresas, caso esta venha a ser condenada ao pagamento de indeniza&#xe7;&#xe3;o ou outro pagamento de natureza distinta em virtude de atos praticados por Voc&#xea; em desacordo com as disposi&#xe7;&#xf5;es deste Termo de Uso ou da legisla&#xe7;&#xe3;o aplic&#xe1;vel,&#xa;&#xa;5.4. As Empresas n&#xe3;o garantem, de forma expressa ou impl&#xed;cita, o desempenho e a adequa&#xe7;&#xe3;o da Plataforma para qualquer finalidade espec&#xed;fica desejada por Voc&#xea;.&#xa;&#xa;5.5.  As Empresas n&#xe3;o s&#xe3;o respons&#xe1;veis pela presta&#xe7;&#xe3;o de quaisquer servi&#xe7;os ou bens, vendidos ou anunciados atrav&#xe9;s dos seus anunciantes, patrocinadores, usu&#xe1;rios ou parceiros de forma geral, associados &#xe0; Plataforma, aos sites ou ao Portal Globo.com.&#xa;&#xa;6 &#x2013; N&#xc3;O LICEN&#xc7;A&#xa;&#xa;6.1. As Empresas autorizam o Usu&#xe1;rio a utilizar qualquer aplicativo de inform&#xe1;tica instalado no servidor das Empresas que execute os elementos que comp&#xf5;em a Plataforma, desde que tal fato ocorra unicamente para utilizar a Plataforma em conformidade com o estabelecido neste Termo de Uso. As Empresas n&#xe3;o concedem nenhuma outra licen&#xe7;a ou autoriza&#xe7;&#xe3;o de uso de nenhuma classe sobre os seus direitos de propriedade industrial e intelectual ou sobre qualquer outra propriedade ou direito relacionado com a Plataforma ou ao Portal Globo.com.&#xa;&#xa;7 &#x2013; VIG&#xca;NCIA&#xa;&#xa;7.1. A autoriza&#xe7;&#xe3;o ora concedida para uso da Plataforma tem dura&#xe7;&#xe3;o por prazo indeterminado. As Empresas reservam-se o direito de dar por terminada ou suspender a disponibiliza&#xe7;&#xe3;o da Plataforma a qualquer tempo, a seu exclusivo crit&#xe9;rio.&#xa;&#xa;7.2. Ademais, as Empresas se reservam o direito de modificar unilateralmente a apresenta&#xe7;&#xe3;o e configura&#xe7;&#xe3;o da Plataforma, assim como as condi&#xe7;&#xf5;es ora requeridas para sua utiliza&#xe7;&#xe3;o.&#xa;&#xa;8 &#x2013; DISPOSI&#xc7;&#xd5;ES GERAIS&#xa;&#xa;8.1. O n&#xe3;o exerc&#xed;cio pelas Empresas ou pelo Usu&#xe1;rio de quaisquer direitos ou faculdades que lhes sejam conferidos por este Termo de Uso ou pela legisla&#xe7;&#xe3;o brasileira, bem como a eventual toler&#xe2;ncia contra infra&#xe7;&#xf5;es a este Termo de Uso, n&#xe3;o importar&#xe1; na ren&#xfa;ncia aos seus direitos, nova&#xe7;&#xe3;o ou altera&#xe7;&#xe3;o de itens e cl&#xe1;usulas deste Termo de Uso, podendo as Empresas ou Usu&#xe1;rio exerc&#xea;-los a qualquer momento.&#xa;&#xa;8.2. O presente instrumento, bem como a cess&#xe3;o prevista na cl&#xe1;usula quarta acima n&#xe3;o importam na cria&#xe7;&#xe3;o de qualquer v&#xed;nculo trabalhista, societ&#xe1;rio, de parceria ou associativo entre as Empresas e o Usu&#xe1;rio.&#xa;&#xa;8.3. A marca&#xe7;&#xe3;o do &#x201c;check-box&#x201d; ao lado do texto &quot;Concordo com os Termos&quot;, seguida pelo clique no bot&#xe3;o &quot;aceitar&quot; e/ou a utiliza&#xe7;&#xe3;o da Plataforma por Voc&#xea; s&#xe3;o consideradas, para todos os fins de direito, como sua aceita&#xe7;&#xe3;o de todos os termos e condi&#xe7;&#xf5;es do presente Termo de Uso, que ter&#xe1; valor de contrato, passando o mesmo a regular a rela&#xe7;&#xe3;o entre as Empresas e Voc&#xea;.&#xa;&#xa;8.4. Todos os demais avisos, regulamentos e instru&#xe7;&#xf5;es do Portal Globo.com, bem como a Pol&#xed;tica de Privacidade, complementam este Termo de Uso, no que n&#xe3;o divergirem do presente instrumento.&#xa;&#xa;8.5. Todas as comunica&#xe7;&#xf5;es das Empresas com o Usu&#xe1;rio ser&#xe3;o feitas via e-mail. As Empresas poder&#xe3;o divulgar notifica&#xe7;&#xf5;es ou mensagens atrav&#xe9;s da Plataforma ou do Portal Globo.com para informar ao Usu&#xe1;rio eventuais mudan&#xe7;as na Plataforma ou no Termo de Uso e/ou outras informa&#xe7;&#xf5;es que considerar relevantes.&#xa;&#xa;8.6. Fica eleito o Foro Central da Comarca do Estado do Rio de Janeiro para dirimir quaisquer quest&#xf5;es oriundas deste Termo de Uso, desistindo as Partes de qualquer outro, por mais privilegiado que seja ou venha a ser. Qualquer disputa que surja em virtude do presente Termo de Uso ser&#xe1; regulada pela legisla&#xe7;&#xe3;o brasileira."/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Termos de uso"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Aceitar termos de uso"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancelar"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cadastrar"/>
           </Properties>
         </Component>
       </SubComponents>
