@@ -27,25 +27,28 @@ public class CadastrarFuncionários extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Grupo_Button_Reino = new javax.swing.ButtonGroup();
+        ConversaoDeDinheirobuttonGroup = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
         jLabel5 = new javax.swing.JLabel();
-        jRadioButton3 = new javax.swing.JRadioButton();
         jSpinner1 = new javax.swing.JSpinner();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
-        Botao_ReinoA = new javax.swing.JRadioButton();
-        Button_ReinoB = new javax.swing.JRadioButton();
-        Button_ReinoC = new javax.swing.JRadioButton();
-        Button_ReinoD = new javax.swing.JRadioButton();
+        FuncaoAjCheckBox1 = new javax.swing.JCheckBox();
+        FuncaoBjCheckBox = new javax.swing.JCheckBox();
+        FuncaoCjCheckBox = new javax.swing.JCheckBox();
+        FuncaoDjCheckBox = new javax.swing.JCheckBox();
+        FuncaoEjCheckBox = new javax.swing.JCheckBox();
+        FuncaoFjCheckBox = new javax.swing.JCheckBox();
+        OutraFuncaojCheckBox = new javax.swing.JCheckBox();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        OurojRadioButton = new javax.swing.JRadioButton();
+        PratajRadioButton = new javax.swing.JRadioButton();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setMaximumSize(new java.awt.Dimension(600, 450));
         setMinimumSize(new java.awt.Dimension(600, 450));
@@ -60,17 +63,8 @@ public class CadastrarFuncionários extends javax.swing.JPanel {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Salario");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setText("Desc. do funcionário:");
-
-        jRadioButton1.setText("Função B");
-
-        jRadioButton2.setText("Função A");
-
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Função");
-
-        jRadioButton3.setText("Função C");
 
         jSpinner1.setModel(new javax.swing.SpinnerNumberModel(0.0f, 0.0f, null, 0.0f));
 
@@ -85,106 +79,151 @@ public class CadastrarFuncionários extends javax.swing.JPanel {
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton2.setText("Cancelar");
 
-        jScrollPane3.setViewportView(jTextPane1);
+        FuncaoAjCheckBox1.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        FuncaoAjCheckBox1.setText("Função A");
 
-        Grupo_Button_Reino.add(Botao_ReinoA);
-        Botao_ReinoA.setText("Reino A");
+        FuncaoBjCheckBox.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        FuncaoBjCheckBox.setText("Função B");
 
-        Grupo_Button_Reino.add(Button_ReinoB);
-        Button_ReinoB.setText("Reino B");
+        FuncaoCjCheckBox.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        FuncaoCjCheckBox.setText("Função C");
 
-        Grupo_Button_Reino.add(Button_ReinoC);
-        Button_ReinoC.setText("Reino C");
+        FuncaoDjCheckBox.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        FuncaoDjCheckBox.setText("Função D");
 
-        Grupo_Button_Reino.add(Button_ReinoD);
-        Button_ReinoD.setText("Reino D");
+        FuncaoEjCheckBox.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        FuncaoEjCheckBox.setText("Função E");
+
+        FuncaoFjCheckBox.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        FuncaoFjCheckBox.setText("Função F");
+
+        OutraFuncaojCheckBox.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        OutraFuncaojCheckBox.setText("Outra função");
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        ConversaoDeDinheirobuttonGroup.add(OurojRadioButton);
+        OurojRadioButton.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        OurojRadioButton.setText("Ouro");
+
+        ConversaoDeDinheirobuttonGroup.add(PratajRadioButton);
+        PratajRadioButton.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        PratajRadioButton.setText("Prata");
+
+        ConversaoDeDinheirobuttonGroup.add(jRadioButton1);
+        jRadioButton1.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        jRadioButton1.setText("Bronze");
+
+        jComboBox1.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Reino A", "Reino B", "Reino C", "Reino D", "Reino E", "Reino F" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(161, 161, 161)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(67, 67, 67)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(30, 30, 30)))
+                .addGap(111, 111, 111))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(40, 40, 40)
+                .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48)
+                .addComponent(OurojRadioButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PratajRadioButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jRadioButton1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(111, 111, 111)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(OutraFuncaojCheckBox)
+                    .addComponent(jLabel5))
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(116, 116, 116)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(76, 76, 76)
-                                .addComponent(jLabel4)))
+                            .addComponent(FuncaoAjCheckBox1)
+                            .addComponent(FuncaoBjCheckBox))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jRadioButton2)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton1)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton3))
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Botao_ReinoA)
-                                .addGap(18, 18, 18)
-                                .addComponent(Button_ReinoB)
-                                .addGap(18, 18, 18)
-                                .addComponent(Button_ReinoC)
-                                .addGap(18, 18, 18)
-                                .addComponent(Button_ReinoD)))
-                        .addGap(9, 9, 9))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(93, 93, 93)
-                        .addComponent(jButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)))
-                .addContainerGap(37, Short.MAX_VALUE))
+                            .addComponent(FuncaoDjCheckBox)
+                            .addComponent(FuncaoCjCheckBox))
+                        .addGap(35, 35, 35)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(FuncaoEjCheckBox, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(FuncaoFjCheckBox, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(90, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(98, 98, 98)
+                .addComponent(jButton1)
+                .addGap(166, 166, 166))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
+                .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(Botao_ReinoA)
-                    .addComponent(Button_ReinoB)
-                    .addComponent(Button_ReinoC)
-                    .addComponent(Button_ReinoD))
-                .addGap(44, 44, 44)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton3))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jComboBox1)
+                    .addComponent(jTextField1))
+                .addGap(48, 48, 48)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(jLabel4)
-                        .addGap(47, 47, 47))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(FuncaoEjCheckBox)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FuncaoFjCheckBox)
+                            .addComponent(FuncaoDjCheckBox)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FuncaoAjCheckBox1)
+                            .addComponent(FuncaoCjCheckBox))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FuncaoBjCheckBox))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel5)))
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(OutraFuncaojCheckBox)
+                        .addGap(31, 31, 31)))
+                .addGap(37, 37, 37)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(OurojRadioButton)
+                    .addComponent(PratajRadioButton)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton1))
-                .addGap(32, 32, 32))
+                .addGap(31, 31, 31))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -194,24 +233,27 @@ public class CadastrarFuncionários extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton Botao_ReinoA;
-    private javax.swing.JRadioButton Button_ReinoB;
-    private javax.swing.JRadioButton Button_ReinoC;
-    private javax.swing.JRadioButton Button_ReinoD;
-    private javax.swing.ButtonGroup Grupo_Button_Reino;
+    private javax.swing.ButtonGroup ConversaoDeDinheirobuttonGroup;
+    private javax.swing.JCheckBox FuncaoAjCheckBox1;
+    private javax.swing.JCheckBox FuncaoBjCheckBox;
+    private javax.swing.JCheckBox FuncaoCjCheckBox;
+    private javax.swing.JCheckBox FuncaoDjCheckBox;
+    private javax.swing.JCheckBox FuncaoEjCheckBox;
+    private javax.swing.JCheckBox FuncaoFjCheckBox;
+    private javax.swing.JRadioButton OurojRadioButton;
+    private javax.swing.JCheckBox OutraFuncaojCheckBox;
+    private javax.swing.JRadioButton PratajRadioButton;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }

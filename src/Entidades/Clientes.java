@@ -10,31 +10,96 @@ package Entidades;
  * @author breno
  */
 public class Clientes {
-    private String tipo;
-    private String raca;
-    private String categoria;
+    private String Raca;
+    private String Categoria;
+    private int Idade;
+    private String Reino;
+    private int Level;
+    private String Nome;
+    private String tipodecliente;
+    private String classe;
 
-    public String getTipo() {
-        return tipo;
+    /**
+     * @return the Idade
+     */
+    public int getIdade() {
+        return Idade;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    /**
+     * @param Idade the Idade to set
+     */
+    public void setIdade(int Idade) {
+        this.Idade = Idade;
     }
 
-    public String getRaca() {
-        return raca;
+    /**
+     * @return the Reino
+     */
+    public String getReino() {
+        return Reino;
     }
 
-    public void setRaca(String raca) {
-        this.raca = raca;
+    /**
+     * @param Reino the Reino to set
+     */
+    public void setReino(String Reino) {
+        this.Reino = Reino;
     }
 
-    public String getCategoria() {
-        return categoria;
+    /**
+     * @return the Level
+     */
+    public int getLevel() {
+        return Level;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    /**
+     * @param Level the Level to set
+     */
+    public void setLevel(int Level) {
+        this.Level = Level;
+    }
+
+    /**
+     * @return the Nome
+     */
+    public String getNome() {
+        return Nome;
+    }
+
+    /**
+     * @param Nome the Nome to set
+     */
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    }
+
+    /**
+     * @return the tipodecliente
+     */
+    public String getTipodecliente() {
+        return tipodecliente;
+    }
+
+    /**
+     * @param tipodecliente the tipodecliente to set
+     */
+    public void setTipodecliente(String tipodecliente) {
+        this.tipodecliente = tipodecliente;
+    }
+
+    /**
+     * @return the classe
+     */
+    public String getClasse() {
+        return classe;
+    }
+
+    /**
+     * @param classe the classe to set
+     */
+    public void setClasse(String classe) {
+        this.classe = classe;
     }
 }
