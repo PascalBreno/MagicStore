@@ -5,6 +5,10 @@
         <group>
             <file>file:/home/pascal/Desktop/MagicStore/MagicStore/src/View/CadastrarFuncionários.java</file>
             <file>file:/home/pascal/Desktop/MagicStore/MagicStore/src/View/JanelaPrincipal.java</file>
+            <file>file:/home/pascal/Desktop/MagicStore/MagicStore/src/View/novosmagos.java</file>
+            <file>file:/home/pascal/Desktop/MagicStore/MagicStore/src/View/CadastrarItens.java</file>
+            <file>file:/home/pascal/Desktop/MagicStore/MagicStore/src/PersistenciaLista/NovoMagoPersistenciaLista.java</file>
+            <file>file:/home/pascal/Desktop/MagicStore/MagicStore/src/Persistencia/persistenciaMago.java</file>
         </group>
     </open-files>
 </project-private>

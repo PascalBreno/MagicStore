@@ -9,7 +9,8 @@ package Entidades;
  *
  * @author breno
  */
-public class Clientes {
+public class Magos {
+    private int id;
     private String Raca;
     private String Categoria;
     private int Idade;
@@ -101,5 +102,47 @@ public class Clientes {
      */
     public void setClasse(String classe) {
         this.classe = classe;
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * @return the Raca
+     */
+    public String getRaca() {
+        return Raca;
+    }
+
+    /**
+     * @param Raca the Raca to set
+     */
+    public void setRaca(String Raca) {
+        this.Raca = Raca;
+    }
+
+    /**
+     * @return the Categoria
+     */
+    public String getCategoria() {
+        return Categoria;
+    }
+
+    /**
+     * @param Categoria the Categoria to set
+     */
+    public void setCategoria(String Categoria) {
+        this.Categoria = Categoria;
     }
 }
