@@ -6,6 +6,8 @@
 package Persistencia;
 
 import Entidades.Equipamentos;
+import Entidades.Itens;
+import java.util.List;
 
 /**
  *
@@ -18,4 +20,5 @@ public interface persistenciaEquipamentos {
     
     public void remover(Equipamentos novoEquipamento);
     
+    public List<Equipamentos> getAll();
 }

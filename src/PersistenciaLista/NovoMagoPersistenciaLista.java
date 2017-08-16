@@ -29,7 +29,6 @@ public class NovoMagoPersistenciaLista
         }   
         novoMago.setId(ultimoId + 1);
         lista.add(novoMago);
-        System.out.println(lista.size());
     }
 
     @Override
@@ -74,8 +73,12 @@ public class NovoMagoPersistenciaLista
             if(elem.getCategoria().equals(Categoria)){
                 return elem;    
             }
+        }
         return null;
+    }
+    @Override
+  public List<Magos> getAll(){
+      return lista;
+  }
+ 
 }
-
-  
-

@@ -23,6 +23,6 @@ public interface persistenciaMago {
             int idade, String Reino, int level, String nome, 
             String tipodecliente, String classe);
     
-        public List<Magos> getAll();
+            public List<Magos> getAll();
 
 }

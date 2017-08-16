@@ -14,7 +14,7 @@ public class Itens {
     private String nome;
     private int quantidade;
     private int id;
-
+    private String descricao;
     public float getPreço() {
         return preço;
     }
@@ -45,6 +45,20 @@ public class Itens {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    /**
+     * @return the descricao
+     */
+    public String getDescricao() {
+        return descricao;
+    }
+
+    /**
+     * @param descricao the descricao to set
+     */
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
     
 }

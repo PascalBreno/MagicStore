@@ -10,7 +10,9 @@ package Entidades;
  * @author breno
  */
 public class Equipamentos {
+    private double preco;
     private String tipo;
+    private int id;
     private String descricao;
     private int nivelminimo;
     private int atk;
@@ -117,6 +119,34 @@ public class Equipamentos {
 
     public void setMagiaDark(int MagiaDark) {
         this.MagiaDark = MagiaDark;
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * @return the preco
+     */
+    public double getPreco() {
+        return preco;
+    }
+
+    /**
+     * @param preco the preco to set
+     */
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
     
 }
