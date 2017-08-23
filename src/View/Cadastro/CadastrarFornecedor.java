@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package View.Cadastro;
 
+import View.jTableModel.Fornecedor_jTableModel;
 import Entidades.Fornecedor;
 import Persistencia.persistenciaFornecedor;
 import PersistenciaLista.FornecedorPersistenciaLista;
@@ -81,74 +82,74 @@ public class CadastrarFornecedor extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Nome");
         add(jLabel1);
-        jLabel1.setBounds(120, 40, 41, 17);
+        jLabel1.setBounds(120, 40, 36, 17);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setText("Reino");
         add(jLabel2);
-        jLabel2.setBounds(329, 184, 57, 22);
+        jLabel2.setBounds(329, 184, 52, 22);
 
         Button_Reino.add(Button_ReinoA);
         Button_ReinoA.setText("Reino A");
         add(Button_ReinoA);
-        Button_ReinoA.setBounds(99, 224, 78, 23);
+        Button_ReinoA.setBounds(99, 224, 63, 23);
 
         Button_Reino.add(Button_ReinoB);
         Button_ReinoB.setText("Reino B");
         add(Button_ReinoB);
-        Button_ReinoB.setBounds(195, 224, 78, 23);
+        Button_ReinoB.setBounds(195, 224, 61, 23);
 
         Button_Reino.add(Button_ReinoC);
         Button_ReinoC.setText("Reino C");
         add(Button_ReinoC);
-        Button_ReinoC.setBounds(308, 224, 78, 23);
+        Button_ReinoC.setBounds(308, 224, 63, 23);
 
         Button_Reino.add(Button_ReinoD);
         Button_ReinoD.setText("Reino D");
         add(Button_ReinoD);
-        Button_ReinoD.setBounds(416, 224, 79, 23);
+        Button_ReinoD.setBounds(416, 224, 63, 23);
 
         Button_Reino.add(Button_ReinoE);
         Button_ReinoE.setText("Reino E");
         add(Button_ReinoE);
-        Button_ReinoE.setBounds(513, 224, 77, 23);
+        Button_ReinoE.setBounds(513, 224, 61, 23);
         add(Nome_jTextField);
-        Nome_jTextField.setBounds(204, 38, 378, 19);
+        Nome_jTextField.setBounds(204, 38, 378, 20);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setText("Tipo de Fornecedor");
         add(jLabel3);
-        jLabel3.setBounds(230, 80, 195, 22);
+        jLabel3.setBounds(230, 80, 173, 22);
 
         Grupo_Fornecedor.add(Button_Viajante);
         Button_Viajante.setText("Viajante");
         add(Button_Viajante);
-        Button_Viajante.setBounds(189, 131, 84, 23);
+        Button_Viajante.setBounds(189, 131, 65, 23);
 
         Grupo_Fornecedor.add(Button_Mago);
         Button_Mago.setText("Mago");
         add(Button_Mago);
-        Button_Mago.setBounds(308, 131, 64, 23);
+        Button_Mago.setBounds(308, 131, 51, 23);
 
         Grupo_Fornecedor.add(Button_Guilda);
         Button_Guilda.setText("Guilda");
         add(Button_Guilda);
-        Button_Guilda.setBounds(433, 131, 70, 23);
+        Button_Guilda.setBounds(433, 131, 55, 23);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Manter Sigilo ");
         add(jLabel4);
-        jLabel4.setBounds(350, 280, 107, 17);
+        jLabel4.setBounds(350, 280, 93, 17);
 
         Sigilo.add(Sigilo_Não);
         Sigilo_Não.setText("Não");
         add(Sigilo_Não);
-        Sigilo_Não.setBounds(450, 310, 53, 23);
+        Sigilo_Não.setBounds(450, 310, 45, 23);
 
         Sigilo.add(Sigilo_Sim);
         Sigilo_Sim.setText("Sim");
         add(Sigilo_Sim);
-        Sigilo_Sim.setBounds(320, 310, 50, 23);
+        Sigilo_Sim.setBounds(320, 310, 41, 23);
 
         Salvar_jButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         Salvar_jButton.setText("Salvar");
@@ -158,7 +159,7 @@ public class CadastrarFornecedor extends javax.swing.JPanel {
             }
         });
         add(Salvar_jButton);
-        Salvar_jButton.setBounds(138, 389, 74, 27);
+        Salvar_jButton.setBounds(138, 389, 69, 25);
 
         Cancelar_jButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         Cancelar_jButton.setText("Cancelar");
@@ -168,17 +169,17 @@ public class CadastrarFornecedor extends javax.swing.JPanel {
             }
         });
         add(Cancelar_jButton);
-        Cancelar_jButton.setBounds(367, 389, 94, 27);
+        Cancelar_jButton.setBounds(367, 389, 85, 25);
 
         Fornecedor_jTable.setModel(new Fornecedor_jTableModel(banco.getAll()) );
         jScrollPane2.setViewportView(Fornecedor_jTable);
 
         add(jScrollPane2);
-        jScrollPane2.setBounds(310, 440, 453, 403);
+        jScrollPane2.setBounds(310, 440, 452, 403);
         add(TipodeFornecedor_jTextField);
-        TipodeFornecedor_jTextField.setBounds(450, 80, 230, 19);
+        TipodeFornecedor_jTextField.setBounds(450, 80, 230, 20);
         add(Reino_jTextField);
-        Reino_jTextField.setBounds(420, 190, 260, 19);
+        Reino_jTextField.setBounds(420, 190, 260, 20);
 
         Apagar_jButton.setText("Apagar");
         Apagar_jButton.addActionListener(new java.awt.event.ActionListener() {
@@ -187,7 +188,7 @@ public class CadastrarFornecedor extends javax.swing.JPanel {
             }
         });
         add(Apagar_jButton);
-        Apagar_jButton.setBounds(80, 460, 85, 25);
+        Apagar_jButton.setBounds(80, 460, 67, 23);
     }// </editor-fold>//GEN-END:initComponents
 
     private void Salvar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salvar_jButtonActionPerformed

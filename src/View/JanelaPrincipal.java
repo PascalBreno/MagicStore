@@ -5,6 +5,14 @@
  */
 package View;
 
+import View.Cadastro.Cadastromagos;
+import View.Cadastro.CadastrarSkill;
+import View.Cadastro.CadastrarPocao;
+import View.Cadastro.CadastrarItens;
+import View.Cadastro.CadastrarEquipamentos;
+import View.Cadastro.CadastrarFornecedor;
+import View.Cadastro.CadastrarFuncionários;
+
 /**
  *
  * @author breno
@@ -189,14 +197,14 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
     private void jMenuItem1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem1MouseClicked
         jPanel1.removeAll();
-        jPanel1.add(new novosmagos());
+        jPanel1.add(new Cadastromagos());
         jPanel1.setVisible(false);
         jPanel1.setVisible(true);
     }//GEN-LAST:event_jMenuItem1MouseClicked
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         jPanel1.removeAll();
-        jPanel1.add(new novosmagos());
+        jPanel1.add(new Cadastromagos());
         jPanel1.setVisible(false);
         jPanel1.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed

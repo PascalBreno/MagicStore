@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package View.Cadastro;
 
+import View.jTableModel.NovoEquipamento_jTableModel;
 import Entidades.Equipamento;
 import PersistenciaLista.EquipamentoPersistenciaLista;
 import javax.swing.JOptionPane;
@@ -79,53 +80,53 @@ public class CadastrarEquipamentos extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Tipo");
         add(jLabel1);
-        jLabel1.setBounds(187, 58, 30, 17);
+        jLabel1.setBounds(187, 58, 26, 17);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Level Mínimo");
         add(jLabel2);
-        jLabel2.setBounds(79, 106, 88, 17);
+        jLabel2.setBounds(79, 106, 77, 17);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Ataque");
         add(jLabel3);
-        jLabel3.setBounds(89, 151, 49, 17);
+        jLabel3.setBounds(89, 151, 43, 17);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Defesa");
         add(jLabel4);
-        jLabel4.setBounds(89, 196, 49, 17);
+        jLabel4.setBounds(89, 196, 41, 17);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setText("Magia");
         add(jLabel5);
-        jLabel5.setBounds(281, 257, 61, 22);
+        jLabel5.setBounds(281, 257, 54, 22);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Raridade");
         add(jLabel6);
-        jLabel6.setBounds(312, 95, 61, 17);
+        jLabel6.setBounds(312, 95, 53, 17);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Descrição");
         add(jLabel7);
-        jLabel7.setBounds(304, 151, 69, 17);
+        jLabel7.setBounds(304, 151, 59, 17);
 
         jLabel8.setText("Fogo");
         add(jLabel8);
-        jLabel8.setBounds(132, 297, 35, 15);
+        jLabel8.setBounds(132, 297, 24, 14);
 
         jLabel9.setText("Agua");
         add(jLabel9);
-        jLabel9.setBounds(244, 297, 36, 15);
+        jLabel9.setBounds(244, 297, 25, 14);
 
         jLabel10.setText("Terra");
         add(jLabel10);
-        jLabel10.setBounds(344, 297, 38, 15);
+        jLabel10.setBounds(344, 297, 26, 14);
 
         jLabel11.setText("Ar");
         add(jLabel11);
-        jLabel11.setBounds(472, 297, 15, 15);
+        jLabel11.setBounds(472, 297, 11, 14);
 
         jScrollPane3.setViewportView(Descricao_jTextPane);
 
@@ -140,7 +141,7 @@ public class CadastrarEquipamentos extends javax.swing.JPanel {
             }
         });
         add(Cancelar_jButton);
-        Cancelar_jButton.setBounds(138, 379, 94, 27);
+        Cancelar_jButton.setBounds(138, 379, 85, 25);
 
         Salvar_jButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         Salvar_jButton.setText("Salvar");
@@ -150,30 +151,30 @@ public class CadastrarEquipamentos extends javax.swing.JPanel {
             }
         });
         add(Salvar_jButton);
-        Salvar_jButton.setBounds(367, 379, 74, 27);
+        Salvar_jButton.setBounds(367, 379, 69, 25);
         add(Fire_jTextField);
-        Fire_jTextField.setBounds(120, 320, 58, 19);
+        Fire_jTextField.setBounds(120, 320, 58, 20);
         add(Water_jTextField);
-        Water_jTextField.setBounds(240, 320, 58, 19);
+        Water_jTextField.setBounds(240, 320, 58, 20);
         add(Air_jTextField);
-        Air_jTextField.setBounds(460, 320, 58, 19);
+        Air_jTextField.setBounds(460, 320, 58, 20);
         add(Rock_jTextField);
-        Rock_jTextField.setBounds(340, 320, 58, 19);
+        Rock_jTextField.setBounds(340, 320, 58, 20);
         add(Defesa_jTextField);
-        Defesa_jTextField.setBounds(167, 195, 60, 19);
+        Defesa_jTextField.setBounds(167, 195, 60, 20);
         add(Ataque_jTextField);
-        Ataque_jTextField.setBounds(167, 150, 62, 19);
+        Ataque_jTextField.setBounds(167, 150, 62, 20);
         add(Level_jTextField);
-        Level_jTextField.setBounds(167, 105, 62, 19);
+        Level_jTextField.setBounds(167, 105, 62, 20);
         add(Raridade_jTextField);
-        Raridade_jTextField.setBounds(391, 94, 116, 19);
+        Raridade_jTextField.setBounds(391, 94, 116, 20);
         add(tipo_jTextField);
-        tipo_jTextField.setBounds(244, 57, 98, 19);
+        tipo_jTextField.setBounds(244, 57, 98, 20);
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel12.setText("Preço");
         add(jLabel12);
-        jLabel12.setBounds(342, 221, 40, 17);
+        jLabel12.setBounds(342, 221, 35, 17);
 
         preco_jTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -181,13 +182,13 @@ public class CadastrarEquipamentos extends javax.swing.JPanel {
             }
         });
         add(preco_jTextField);
-        preco_jTextField.setBounds(394, 220, 93, 19);
+        preco_jTextField.setBounds(394, 220, 93, 20);
 
         Equipamento_jTable.setModel(new NovoEquipamento_jTableModel(banco.getAll()) );
         jScrollPane1.setViewportView(Equipamento_jTable);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(250, 420, 500, 403);
+        jScrollPane1.setBounds(250, 420, 500, 402);
 
         Apagar_jButton.setText("Apagar");
         Apagar_jButton.addActionListener(new java.awt.event.ActionListener() {
@@ -196,7 +197,7 @@ public class CadastrarEquipamentos extends javax.swing.JPanel {
             }
         });
         add(Apagar_jButton);
-        Apagar_jButton.setBounds(50, 450, 85, 25);
+        Apagar_jButton.setBounds(50, 450, 67, 23);
     }// </editor-fold>//GEN-END:initComponents
 
     private void Salvar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salvar_jButtonActionPerformed
