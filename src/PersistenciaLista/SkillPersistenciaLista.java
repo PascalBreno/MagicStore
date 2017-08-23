@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class NovoSkillPersistenciaLista 
+public class SkillPersistenciaLista 
         implements persistenciaSkill {
 
-    private List lista = new ArrayList();
+    public List lista = new ArrayList();
 
     @Override
     public void inserir(Skill novoSkill) {
@@ -47,7 +47,7 @@ public class NovoSkillPersistenciaLista
         }
     }
 
-    @Override
+
     public Skill buscar(int id) {
          for (int i = 0; i < lista.size(); i++) {
             Skill elem = (Skill) lista.get(i);

@@ -1,16 +1,16 @@
 
 package Persistencia;
 
-import Entidades.Skills;
+import Entidades.Skill;
 import java.util.List;
 
 
 public interface persistenciaSkill {
-    public void inserir(Skills novoSkill);
+    public void inserir(Skill novoSkill);
     
-    public void alterar(Skills novoSkill);
+    public void alterar(Skill novoSkill);
     
-    public void remover(Skills novoSkill);
+    public void remover(Skill novoSkill);
     
-    public List<Skills> getAll();
+    public List<Skill> getAll();
 }

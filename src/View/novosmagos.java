@@ -5,9 +5,9 @@
  */
 package View;
 
-import Entidades.Magos;
+import Entidades.Mago;
 import Persistencia.persistenciaMago;
-import PersistenciaLista.NovoMagoPersistenciaLista;
+import PersistenciaLista.MagoPersistenciaLista;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableModel;
 
@@ -16,7 +16,7 @@ import javax.swing.table.TableModel;
  * @author breno
  */
 public class novosmagos extends javax.swing.JPanel {
-    private static persistenciaMago banco = new NovoMagoPersistenciaLista ();
+    private static persistenciaMago banco = new MagoPersistenciaLista ();
     /**
      * Creates new form novosmagos
      */
@@ -58,6 +58,7 @@ public class novosmagos extends javax.swing.JPanel {
         Cadastrar_jButton = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         magosjTable = new javax.swing.JTable();
+        Apagar_jButton = new javax.swing.JButton();
 
         setBackground(java.awt.Color.gray);
 
@@ -161,8 +162,15 @@ public class novosmagos extends javax.swing.JPanel {
             }
         });
 
-        magosjTable.setModel(new NovoMago_jTableModel(banco.getAll()) );
+        magosjTable.setModel(new Mago_jTableModel(banco.getAll()) );
         jScrollPane3.setViewportView(magosjTable);
+
+        Apagar_jButton.setText("Apagar");
+        Apagar_jButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Apagar_jButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -171,6 +179,11 @@ public class novosmagos extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Apagar_jButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(35, 35, 35)
                         .addComponent(jLabel1)
@@ -237,10 +250,6 @@ public class novosmagos extends javax.swing.JPanel {
                                 .addGap(14, 14, 14)
                                 .addComponent(Termos_jRadioButton)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(82, 82, 82)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -284,8 +293,13 @@ public class novosmagos extends javax.swing.JPanel {
                             .addComponent(cancelarjButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(Termos_jRadioButton)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(Apagar_jButton)))
                 .addContainerGap(114, Short.MAX_VALUE))
         );
 
@@ -321,7 +335,7 @@ public class novosmagos extends javax.swing.JPanel {
 
     private void Cadastrar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cadastrar_jButtonActionPerformed
       //  if(Termos_jRadioButton.getAccessibleContext()==true){
-            Magos novoMago = new Magos();
+            Mago novoMago = new Mago();
             novoMago.setNome(Nome_jTextField.getText());
             int m = Integer.parseInt(Idade_jTextField.getText());
             novoMago.setIdade(m);
@@ -337,8 +351,8 @@ public class novosmagos extends javax.swing.JPanel {
        JOptionPane.showMessageDialog(
                 Cadastrar_jButton, "Cadastrado com Sucesso!");
             cancelarjButtonActionPerformed(null);
-               NovoMago_jTableModel modelo = 
-                (NovoMago_jTableModel) magosjTable.getModel();
+               Mago_jTableModel modelo = 
+                (Mago_jTableModel) magosjTable.getModel();
                        modelo.fireTableRowsInserted(0, 1);
         
     }//GEN-LAST:event_Cadastrar_jButtonActionPerformed
@@ -347,8 +361,29 @@ public class novosmagos extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_cancelarjButtonActionPerformed
 
+    private void Apagar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Apagar_jButtonActionPerformed
+        int[] linhas = magosjTable.getSelectedRows();
+        
+//        int decremento = 0;
+//        for(int i = 0; i < linhas.length;i++){
+//            Responsavel removido = banco
+//                    .getAll().get(linhas[i]-decremento);
+        for(int i = linhas.length - 1; i >= 0;i--){
+            Mago removido = banco
+                    .getAll().get(linhas[i]);
+            banco.remover(removido);
+//            decremento++;
+            
+            Mago_jTableModel modelo = 
+                (Mago_jTableModel) magosjTable.getModel();
+        
+            modelo.fireTableRowsDeleted(0, 1);
+        }
+    }//GEN-LAST:event_Apagar_jButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Apagar_jButton;
     private javax.swing.JButton Cadastrar_jButton;
     private javax.swing.JComboBox<String> Classe_jComboBox;
     private javax.swing.JTextField Idade_jTextField;

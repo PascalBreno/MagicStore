@@ -5,42 +5,42 @@
  */
 package PersistenciaLista;
 
-import Entidades.Itens;
-import Persistencia.persistenciaItens;
+import Entidades.Iten;
 import java.util.ArrayList;
 import java.util.List;
+import Persistencia.persistenciaIten;
 
 /**
  *
  * @author pascal
  */
-public class NovoItenPersistenciaLista implements persistenciaItens {
+public class ItenPersistenciaLista implements persistenciaIten {
     
-    private List lista = new ArrayList();
+    public List lista = new ArrayList();
     
-    public void inserir(Itens novoItem) {
+    public void inserir(Iten novoItem) {
     int ultimoId = 0;
         if (lista.size() > 0) {
             int posicaoUltimo = lista.size() - 1;
-            Itens ultimo = (Itens) lista.get(posicaoUltimo);
+            Iten ultimo = (Iten) lista.get(posicaoUltimo);
             ultimoId = ultimo.getId();
         }   
         novoItem.setId(ultimoId + 1);
         lista.add(novoItem);
     }
-public void alterar(Itens novoItem) {
+public void alterar(Iten novoItem) {
         for (int i = 0; i < lista.size(); i++) {
-            Itens elem = (Itens) lista.get(i);
+            Iten elem = (Iten) lista.get(i);
             if(novoItem.getId() == elem.getId()){
                 lista.set(i, novoItem);
             }
         }
     }
- public void remover(Itens novoItem) {
+ public void remover(Iten novoItem) {
           int posicao = 0;
 
         while (posicao < lista.size()) {
-            Itens elemento = (Itens) lista.get(posicao);
+            Iten elemento = (Iten) lista.get(posicao);
             if (elemento.getId() == novoItem.getId()) {
                 lista.remove(posicao);
                 break;
@@ -48,9 +48,9 @@ public void alterar(Itens novoItem) {
             posicao++;
         }
     }
- public Itens buscar(int id, String nome, float preco) {
+ public Iten buscar(int id, String nome, float preco) {
          for (int i = 0; i < lista.size(); i++) {
-            Itens elem = (Itens) lista.get(i);
+            Iten elem = (Iten) lista.get(i);
             if(elem.getId() == id){
                 return elem;
             }
@@ -60,7 +60,7 @@ public void alterar(Itens novoItem) {
         }
         return null;
     }
-  public List<Itens> getAll(){
+  public List<Iten> getAll(){
       return lista;
   }
 

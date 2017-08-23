@@ -9,7 +9,7 @@ package Entidades;
  *
  * @author breno
  */
-public class Equipamentos {
+public class Equipamento {
     private double preco;
     private String tipo;
     private int id;

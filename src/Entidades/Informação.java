@@ -9,7 +9,7 @@ package Entidades;
  *
  * @author breno
  */
-public class Informação extends Itens {
+public class Informação extends Iten {
     private String TipoDeInformacao;
     private String referente;
     private String Informação;

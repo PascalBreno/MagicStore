@@ -9,7 +9,7 @@ package Entidades;
  *
  * @author breno
  */
-public class Itens {
+public class Iten {
     private float preço;
     private String nome;
     private int quantidade;

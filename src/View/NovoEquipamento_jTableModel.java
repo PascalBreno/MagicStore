@@ -5,7 +5,7 @@
  */
 package View;
 
-import Entidades.Equipamentos;
+import Entidades.Equipamento;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
@@ -14,11 +14,11 @@ import javax.swing.table.AbstractTableModel;
  * @author pascal
  */
 public class NovoEquipamento_jTableModel extends AbstractTableModel{
-     private List<Equipamentos> lista;
+     private List<Equipamento> lista;
       private static final String[] nomes = 
             new String[]{"Id","Tipo","atk","def",
                 "preço"};
-    public NovoEquipamento_jTableModel(List<Equipamentos> lista) {
+    public NovoEquipamento_jTableModel(List<Equipamento> lista) {
            this.lista = lista;
        }      
    public String getColumnName(int column) {
@@ -31,7 +31,7 @@ public class NovoEquipamento_jTableModel extends AbstractTableModel{
        return 5;//To change body of generated methods, choose Tools | Templates.
    }
 public Object getValueAt(int rowIndex, int columnIndex) {
-        Equipamentos novoEquipamento = lista.get(rowIndex);
+        Equipamento novoEquipamento = lista.get(rowIndex);
         switch (columnIndex) {
             case 0:
                 return novoEquipamento.getId();

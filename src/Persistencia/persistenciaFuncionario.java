@@ -11,7 +11,7 @@ import Entidades.Funcionario;
  *
  * @author pascal
  */
-public interface persistenciaFuncionarios {
+public interface persistenciaFuncionario {
     
     public void inserir(Funcionario novoFuncionario);
     

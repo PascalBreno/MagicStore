@@ -5,16 +5,16 @@
  */
 package Persistencia;
 
-import Entidades.Itens;
+import Entidades.Iten;
 import java.util.List;
 
 /**
  *
  * @author pascal
  */
-public interface persistenciaItens {
-    public void inserir(Itens novoItem);
-    public void alterar(Itens novoItem);
-    public void remover(Itens novoItem);
-    public List<Itens> getAll();
+public interface persistenciaIten {
+    public void inserir(Iten novoItem);
+    public void alterar(Iten novoItem);
+    public void remover(Iten novoItem);
+    public List<Iten> getAll();
 }

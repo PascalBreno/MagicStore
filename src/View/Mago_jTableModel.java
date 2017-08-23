@@ -5,7 +5,7 @@
  */
 package View;
 
-import Entidades.Magos;
+import Entidades.Mago;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
@@ -13,13 +13,13 @@ import javax.swing.table.AbstractTableModel;
  *
  * @author pascal
  */
-public class NovoMago_jTableModel extends AbstractTableModel{
-    private List<Magos> lista;
+public class Mago_jTableModel extends AbstractTableModel{
+    private List<Mago> lista;
       private static final String[] nomes = 
             new String[]{"Id","Nome","Raça","Level","Categoria",
                 "Classe","Tipo_de_Cliente"};
 
-    public NovoMago_jTableModel(List<Magos> lista) {
+    public Mago_jTableModel(List<Mago> lista) {
         this.lista = lista;
     }
     @Override
@@ -38,7 +38,7 @@ public String getColumnName(int column) {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        Magos novomago = lista.get(rowIndex);
+        Mago novomago = lista.get(rowIndex);
         switch (columnIndex) {
             case 0:
                 return novomago.getId();

@@ -9,7 +9,7 @@ package Entidades;
  *
  * @author breno
  */
-public class Skills extends Itens {
+public class Skill extends Iten {
     private String Tipo;
     private String RestricaoDeClasse;
     private int RestricaoDeLevel;

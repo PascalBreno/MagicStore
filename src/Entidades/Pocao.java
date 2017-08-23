@@ -9,7 +9,7 @@ package Entidades;
  *
  * @author breno
  */
-public class Pocoes extends Itens{
+public class Pocao extends Iten{
     private String TipoDePocao;
     private String descricao;
     private String classe;

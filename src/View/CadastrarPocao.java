@@ -5,11 +5,17 @@
  */
 package View;
 
+import Entidades.Pocao;
+import Persistencia.persistenciaPocao;
+import PersistenciaLista.PocaoPersistenciaLista;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author breno
  */
 public class CadastrarPocao extends javax.swing.JPanel {
+    private static persistenciaPocao banco = new PocaoPersistenciaLista ();
 
     /**
      * Creates new form CadastrarPocao
@@ -28,117 +34,149 @@ public class CadastrarPocao extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        Preco_jTextField = new javax.swing.JTextField();
+        Quantidade_jTextField = new javax.swing.JTextField();
+        Nome_jTextField = new javax.swing.JTextField();
+        Salvar_jButton = new javax.swing.JButton();
+        Cancelar_jButton = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        Pocao_jTable = new javax.swing.JTable();
+        Apagar_jButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        TipoDePocao_jTextField = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(121, 196, 223));
         setForeground(new java.awt.Color(193, 181, 181));
         setMinimumSize(new java.awt.Dimension(600, 450));
         setPreferredSize(new java.awt.Dimension(600, 450));
+        setLayout(null);
 
         jLabel2.setBackground(new java.awt.Color(254, 254, 254));
         jLabel2.setFont(new java.awt.Font("Tempus Sans ITC", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(254, 254, 254));
         jLabel2.setText("PREÇO");
-
-        jLabel3.setFont(new java.awt.Font("Tempus Sans ITC", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(254, 254, 254));
-        jLabel3.setText("ATRIBUTOS");
+        add(jLabel2);
+        jLabel2.setBounds(158, 111, 93, 39);
 
         jLabel4.setFont(new java.awt.Font("Tempus Sans ITC", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(254, 254, 254));
-        jLabel4.setText("REQUERIMENTO DE LEVEL");
+        jLabel4.setText("Quantidade");
+        add(jLabel4);
+        jLabel4.setBounds(150, 160, 80, 39);
 
         jLabel5.setBackground(new java.awt.Color(207, 207, 207));
         jLabel5.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(254, 254, 254));
         jLabel5.setText("NOME");
         jLabel5.setToolTipText("");
+        add(jLabel5);
+        jLabel5.setBounds(158, 60, 93, 39);
+        add(Preco_jTextField);
+        Preco_jTextField.setBounds(266, 121, 580, 19);
+        add(Quantidade_jTextField);
+        Quantidade_jTextField.setBounds(270, 170, 580, 19);
+        add(Nome_jTextField);
+        Nome_jTextField.setBounds(266, 70, 580, 19);
 
-        jButton1.setText("Salvar");
+        Salvar_jButton.setText("Salvar");
+        Salvar_jButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Salvar_jButtonActionPerformed(evt);
+            }
+        });
+        add(Salvar_jButton);
+        Salvar_jButton.setBounds(340, 320, 140, 25);
 
-        jButton2.setText("Cancelar");
+        Cancelar_jButton.setText("Cancelar");
+        Cancelar_jButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cancelar_jButtonActionPerformed(evt);
+            }
+        });
+        add(Cancelar_jButton);
+        Cancelar_jButton.setBounds(520, 320, 140, 25);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(85, 85, 85)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(6, 6, 6)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE)
-                    .addComponent(jTextField2)
-                    .addComponent(jTextField3)
-                    .addComponent(jTextField1))
-                .addGap(129, 129, 129))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(155, 155, 155)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addGap(106, 106, 106))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(11, 11, 11)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
-                .addGap(28, 28, 28))
-        );
+        Pocao_jTable.setModel(new Pocao_jTableModel(banco.getAll()));
+        jScrollPane1.setViewportView(Pocao_jTable);
+
+        add(jScrollPane1);
+        jScrollPane1.setBounds(300, 380, 550, 403);
+
+        Apagar_jButton.setText("Apagar");
+        Apagar_jButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Apagar_jButtonActionPerformed(evt);
+            }
+        });
+        add(Apagar_jButton);
+        Apagar_jButton.setBounds(140, 420, 85, 25);
+
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Tipo De Poção");
+        add(jLabel1);
+        jLabel1.setBounds(140, 230, 120, 17);
+        add(TipoDePocao_jTextField);
+        TipoDePocao_jTextField.setBounds(270, 230, 570, 19);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Apagar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Apagar_jButtonActionPerformed
+         int[] linhas = Pocao_jTable.getSelectedRows();
+        
+//        int decremento = 0;
+//        for(int i = 0; i < linhas.length;i++){
+//            Responsavel removido = banco
+//                    .getAll().get(linhas[i]-decremento);
+        for(int i = linhas.length - 1; i >= 0;i--){
+            Pocao removido = banco
+                    .getAll().get(linhas[i]);
+            banco.remover(removido);
+//            decremento++;
+            
+            Pocao_jTableModel modelo = 
+                (Pocao_jTableModel) Pocao_jTable.getModel();
+        
+            modelo.fireTableRowsDeleted(0, 1);
+        }    
+        
+        
+    }//GEN-LAST:event_Apagar_jButtonActionPerformed
+
+    private void Salvar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salvar_jButtonActionPerformed
+        Pocao nova_Pocao = new Pocao();
+        nova_Pocao.setNome(Nome_jTextField.getText());
+        float preco = Float.parseFloat(Preco_jTextField.getText());
+        nova_Pocao.setPreço(preco);
+        int quantidade = Integer.parseInt(Quantidade_jTextField.getText());
+        nova_Pocao.setQuantidade(quantidade);
+        nova_Pocao.setTipoDePocao(TipoDePocao_jTextField.getText());
+          banco.inserir(nova_Pocao);
+          JOptionPane.showMessageDialog(
+                Salvar_jButton, "Cadastrado com Sucesso!");
+           Cancelar_jButtonActionPerformed(null);
+           Pocao_jTableModel modelo = (Pocao_jTableModel) Pocao_jTable.getModel();
+           modelo.fireTableRowsInserted(0, 1);
+    }//GEN-LAST:event_Salvar_jButtonActionPerformed
+
+    private void Cancelar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancelar_jButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Cancelar_jButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton Apagar_jButton;
+    private javax.swing.JButton Cancelar_jButton;
+    private javax.swing.JTextField Nome_jTextField;
+    private javax.swing.JTable Pocao_jTable;
+    private javax.swing.JTextField Preco_jTextField;
+    private javax.swing.JTextField Quantidade_jTextField;
+    private javax.swing.JButton Salvar_jButton;
+    private javax.swing.JTextField TipoDePocao_jTextField;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

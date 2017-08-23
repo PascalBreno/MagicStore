@@ -13,7 +13,7 @@ public class Funcionario {
     private String nome;
     private String funcao;
     private float salario;
-    private int cod;
+    private int Id;
     private String Reino;
     private String descricao;
 
@@ -41,12 +41,12 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public int getCod() {
-        return cod;
+    public int getId() {
+        return Id;
     }
 
-    public void setCod(int cod) {
-        this.cod = cod;
+    public void setId(int Id) {
+        this.Id = Id;
     }
 
     public String getReino() {

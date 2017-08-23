@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class NovoInformaçãoPersistenciaLista 
+public class InformaçãoPersistenciaLista 
         implements persistenciaInformações {
 
     private List lista = new ArrayList();

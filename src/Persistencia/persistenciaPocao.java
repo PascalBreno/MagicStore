@@ -1,16 +1,16 @@
 
 package Persistencia;
 
-import Entidades.Pocoes;
+import Entidades.Pocao;
 import java.util.List;
 
 
 public interface persistenciaPocao {
-    public void inserir(Pocoes novoPocao);
+    public void inserir(Pocao novoPocao);
     
-    public void alterar(Pocoes novoPocao);
+    public void alterar(Pocao novoPocao);
     
-    public void remover(Pocoes novoPocao);
+    public void remover(Pocao novoPocao);
     
-    public List<Pocoes> getAll();
+    public List<Pocao> getAll();
 }

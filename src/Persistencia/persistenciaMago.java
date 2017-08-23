@@ -5,7 +5,7 @@
  */
 package Persistencia;
 
-import Entidades.Magos;
+import Entidades.Mago;
 import java.util.List;
 
 /**
@@ -13,16 +13,16 @@ import java.util.List;
  * @author pascal
  */
 public interface persistenciaMago {
-    public void inserir(Magos novoMago);
+    public void inserir(Mago novoMago);
     
-    public void alterar(Magos novoMago);
+    public void alterar(Mago novoMago);
     
-    public void remover(Magos novoMago);
+    public void remover(Mago novoMago);
     
-    public Magos buscar(int id, String raça, String Categoria,
+    public Mago buscar(int id, String raça, String Categoria,
             int idade, String Reino, int level, String nome, 
             String tipodecliente, String classe);
     
-            public List<Magos> getAll();
+            public List<Mago> getAll();
 
 }

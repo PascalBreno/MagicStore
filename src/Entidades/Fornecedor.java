@@ -11,9 +11,9 @@ package Entidades;
  */
 public class Fornecedor {
     private String nome;
-    private float preco;
     private String reino;
-    private int ID;
+    private String tipo;
+    private int Id;
 
     public String getNome() {
         return nome;
@@ -21,14 +21,6 @@ public class Fornecedor {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public float getPreco() {
-        return preco;
-    }
-
-    public void setPreco(float preco) {
-        this.preco = preco;
     }
 
     public String getReino() {
@@ -39,11 +31,25 @@ public class Fornecedor {
         this.reino = reino;
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return Id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setId(int Id) {
+        this.Id = Id;
+    }
+
+    /**
+     * @return the tipo
+     */
+    public String getTipo() {
+        return tipo;
+    }
+
+    /**
+     * @param tipo the tipo to set
+     */
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }

@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class NovoPocaoPersistenciaLista 
+public class PocaoPersistenciaLista 
         implements persistenciaPocao {
 
-    private List lista = new ArrayList();
+    public List lista = new ArrayList();
 
     @Override
     public void inserir(Pocao novoPocao) {
@@ -47,7 +47,6 @@ public class NovoPocaoPersistenciaLista
         }
     }
 
-    @Override
     public Pocao buscar(int id) {
          for (int i = 0; i < lista.size(); i++) {
             Pocao elem = (Pocao) lista.get(i);

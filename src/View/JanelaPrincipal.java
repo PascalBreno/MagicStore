@@ -242,7 +242,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
         jPanel1.removeAll();
-        jPanel1.add(new Fornecedor());
+        jPanel1.add(new CadastrarFornecedor());
         jPanel1.setVisible(false);
         jPanel1.setVisible(true);
     }//GEN-LAST:event_jMenuItem7ActionPerformed

@@ -5,17 +5,17 @@
  */
 package View;
 
-import Entidades.Itens;
-import Persistencia.persistenciaItens;
-import PersistenciaLista.NovoItenPersistenciaLista;
+import Entidades.Iten;
+import PersistenciaLista.ItenPersistenciaLista;
 import javax.swing.JOptionPane;
+import Persistencia.persistenciaIten;
 
 /**
  *
  * @author pascal
  */
 public class CadastrarItens extends javax.swing.JPanel {
-    private static persistenciaItens banco = new NovoItenPersistenciaLista ();
+    private static persistenciaIten banco = new ItenPersistenciaLista ();
 
     /**
      * Creates new form CadastrarItens
@@ -46,16 +46,26 @@ public class CadastrarItens extends javax.swing.JPanel {
         Quantidade_jTextField = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
         Item_jTable = new javax.swing.JTable();
+        Apagar_jButton = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(600, 450));
+        setLayout(null);
 
         jLabel1.setText("Nome");
+        add(jLabel1);
+        jLabel1.setBounds(186, 58, 40, 15);
 
         jLabel2.setText("Preço");
+        add(jLabel2);
+        jLabel2.setBounds(186, 106, 40, 15);
 
         jLabel4.setText("Quantidade");
+        add(jLabel4);
+        jLabel4.setBounds(163, 143, 83, 15);
 
         jLabel5.setText("Descrição");
+        add(jLabel5);
+        jLabel5.setBounds(163, 210, 69, 15);
 
         Salvar_jButton.setText("Salvar");
         Salvar_jButton.addActionListener(new java.awt.event.ActionListener() {
@@ -63,6 +73,8 @@ public class CadastrarItens extends javax.swing.JPanel {
                 Salvar_jButtonActionPerformed(evt);
             }
         });
+        add(Salvar_jButton);
+        Salvar_jButton.setBounds(353, 312, 78, 25);
 
         Cancelar_jButton.setText("Cancelar");
         Cancelar_jButton.addActionListener(new java.awt.event.ActionListener() {
@@ -70,83 +82,40 @@ public class CadastrarItens extends javax.swing.JPanel {
                 Cancelar_jButtonActionPerformed(evt);
             }
         });
+        add(Cancelar_jButton);
+        Cancelar_jButton.setBounds(131, 312, 96, 25);
 
         Descricao_jTextArea.setColumns(20);
         Descricao_jTextArea.setRows(5);
         jScrollPane1.setViewportView(Descricao_jTextArea);
 
+        add(jScrollPane1);
+        jScrollPane1.setBounds(278, 191, 223, 78);
+        add(Nome_jTextField);
+        Nome_jTextField.setBounds(278, 56, 222, 19);
+        add(Preco_jTextField);
+        Preco_jTextField.setBounds(278, 104, 222, 19);
+        add(Quantidade_jTextField);
+        Quantidade_jTextField.setBounds(278, 141, 222, 19);
+
         Item_jTable.setModel(new Novoitem_jTableModel(banco.getAll()) );
         jScrollPane2.setViewportView(Item_jTable);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(186, 186, 186)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel1)
-                                .addComponent(jLabel2)))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(163, 163, 163)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel5)
-                                .addComponent(jLabel4))
-                            .addGap(32, 32, 32)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Preco_jTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Nome_jTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Quantidade_jTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Cancelar_jButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Salvar_jButton)
-                        .addGap(70, 70, 70)))
-                .addGap(0, 99, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(Nome_jTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(Preco_jTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(Quantidade_jTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(jLabel5)))
-                .addGap(43, 43, 43)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Salvar_jButton)
-                    .addComponent(Cancelar_jButton))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        add(jScrollPane2);
+        jScrollPane2.setBounds(320, 350, 453, 403);
+
+        Apagar_jButton.setText("Apagar");
+        Apagar_jButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Apagar_jButtonActionPerformed(evt);
+            }
+        });
+        add(Apagar_jButton);
+        Apagar_jButton.setBounds(100, 370, 85, 25);
     }// </editor-fold>//GEN-END:initComponents
 
     private void Salvar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salvar_jButtonActionPerformed
-        Itens novo_item = new Itens();
+        Iten novo_item = new Iten();
         novo_item.setNome(Nome_jTextField.getText());
         float preco = Float.parseFloat(Preco_jTextField.getText());
         novo_item.setPreço(preco);
@@ -168,8 +137,29 @@ public class CadastrarItens extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_Cancelar_jButtonActionPerformed
 
+    private void Apagar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Apagar_jButtonActionPerformed
+            int[] linhas = Item_jTable.getSelectedRows();
+        
+//        int decremento = 0;
+//        for(int i = 0; i < linhas.length;i++){
+//            Responsavel removido = banco
+//                    .getAll().get(linhas[i]-decremento);
+        for(int i = linhas.length - 1; i >= 0;i--){
+            Iten removido = banco
+                    .getAll().get(linhas[i]);
+            banco.remover(removido);
+//            decremento++;
+            
+            Novoitem_jTableModel modelo = 
+                (Novoitem_jTableModel) Item_jTable.getModel();
+        
+            modelo.fireTableRowsDeleted(0, 1);
+        }    
+    }//GEN-LAST:event_Apagar_jButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Apagar_jButton;
     private javax.swing.JButton Cancelar_jButton;
     private javax.swing.JTextArea Descricao_jTextArea;
     private javax.swing.JTable Item_jTable;

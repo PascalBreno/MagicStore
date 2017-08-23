@@ -9,7 +9,7 @@ package Entidades;
  *
  * @author breno
  */
-public class Magos {
+public class Mago {
     private int id;
     private String Raca;
     private String Categoria;
