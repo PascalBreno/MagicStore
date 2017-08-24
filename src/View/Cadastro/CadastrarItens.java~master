@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package View.Cadastro;
 
+import View.jTableModel.Novoitem_jTableModel;
 import Entidades.Iten;
 import PersistenciaLista.ItenPersistenciaLista;
 import javax.swing.JOptionPane;
@@ -53,19 +54,19 @@ public class CadastrarItens extends javax.swing.JPanel {
 
         jLabel1.setText("Nome");
         add(jLabel1);
-        jLabel1.setBounds(186, 58, 40, 15);
+        jLabel1.setBounds(186, 58, 27, 14);
 
         jLabel2.setText("Preço");
         add(jLabel2);
-        jLabel2.setBounds(186, 106, 40, 15);
+        jLabel2.setBounds(186, 106, 27, 14);
 
         jLabel4.setText("Quantidade");
         add(jLabel4);
-        jLabel4.setBounds(163, 143, 83, 15);
+        jLabel4.setBounds(163, 143, 56, 14);
 
         jLabel5.setText("Descrição");
         add(jLabel5);
-        jLabel5.setBounds(163, 210, 69, 15);
+        jLabel5.setBounds(163, 210, 46, 14);
 
         Salvar_jButton.setText("Salvar");
         Salvar_jButton.addActionListener(new java.awt.event.ActionListener() {
@@ -74,7 +75,7 @@ public class CadastrarItens extends javax.swing.JPanel {
             }
         });
         add(Salvar_jButton);
-        Salvar_jButton.setBounds(353, 312, 78, 25);
+        Salvar_jButton.setBounds(353, 312, 63, 23);
 
         Cancelar_jButton.setText("Cancelar");
         Cancelar_jButton.addActionListener(new java.awt.event.ActionListener() {
@@ -83,26 +84,26 @@ public class CadastrarItens extends javax.swing.JPanel {
             }
         });
         add(Cancelar_jButton);
-        Cancelar_jButton.setBounds(131, 312, 96, 25);
+        Cancelar_jButton.setBounds(131, 312, 75, 23);
 
         Descricao_jTextArea.setColumns(20);
         Descricao_jTextArea.setRows(5);
         jScrollPane1.setViewportView(Descricao_jTextArea);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(278, 191, 223, 78);
+        jScrollPane1.setBounds(278, 191, 166, 96);
         add(Nome_jTextField);
-        Nome_jTextField.setBounds(278, 56, 222, 19);
+        Nome_jTextField.setBounds(278, 56, 222, 20);
         add(Preco_jTextField);
-        Preco_jTextField.setBounds(278, 104, 222, 19);
+        Preco_jTextField.setBounds(278, 104, 222, 20);
         add(Quantidade_jTextField);
-        Quantidade_jTextField.setBounds(278, 141, 222, 19);
+        Quantidade_jTextField.setBounds(278, 141, 222, 20);
 
         Item_jTable.setModel(new Novoitem_jTableModel(banco.getAll()) );
         jScrollPane2.setViewportView(Item_jTable);
 
         add(jScrollPane2);
-        jScrollPane2.setBounds(320, 350, 453, 403);
+        jScrollPane2.setBounds(320, 350, 452, 402);
 
         Apagar_jButton.setText("Apagar");
         Apagar_jButton.addActionListener(new java.awt.event.ActionListener() {
@@ -111,7 +112,7 @@ public class CadastrarItens extends javax.swing.JPanel {
             }
         });
         add(Apagar_jButton);
-        Apagar_jButton.setBounds(100, 370, 85, 25);
+        Apagar_jButton.setBounds(100, 370, 67, 23);
     }// </editor-fold>//GEN-END:initComponents
 
     private void Salvar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salvar_jButtonActionPerformed

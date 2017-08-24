@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package View.Cadastro;
 
+import View.jTableModel.Pocao_jTableModel;
 import Entidades.Pocao;
 import Persistencia.persistenciaPocao;
 import PersistenciaLista.PocaoPersistenciaLista;
@@ -74,11 +75,11 @@ public class CadastrarPocao extends javax.swing.JPanel {
         add(jLabel5);
         jLabel5.setBounds(158, 60, 93, 39);
         add(Preco_jTextField);
-        Preco_jTextField.setBounds(266, 121, 580, 19);
+        Preco_jTextField.setBounds(266, 121, 580, 20);
         add(Quantidade_jTextField);
-        Quantidade_jTextField.setBounds(270, 170, 580, 19);
+        Quantidade_jTextField.setBounds(270, 170, 580, 20);
         add(Nome_jTextField);
-        Nome_jTextField.setBounds(266, 70, 580, 19);
+        Nome_jTextField.setBounds(266, 70, 580, 20);
 
         Salvar_jButton.setText("Salvar");
         Salvar_jButton.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +88,7 @@ public class CadastrarPocao extends javax.swing.JPanel {
             }
         });
         add(Salvar_jButton);
-        Salvar_jButton.setBounds(340, 320, 140, 25);
+        Salvar_jButton.setBounds(340, 320, 140, 23);
 
         Cancelar_jButton.setText("Cancelar");
         Cancelar_jButton.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +97,7 @@ public class CadastrarPocao extends javax.swing.JPanel {
             }
         });
         add(Cancelar_jButton);
-        Cancelar_jButton.setBounds(520, 320, 140, 25);
+        Cancelar_jButton.setBounds(520, 320, 140, 23);
 
         Pocao_jTable.setModel(new Pocao_jTableModel(banco.getAll()));
         jScrollPane1.setViewportView(Pocao_jTable);
@@ -111,14 +112,14 @@ public class CadastrarPocao extends javax.swing.JPanel {
             }
         });
         add(Apagar_jButton);
-        Apagar_jButton.setBounds(140, 420, 85, 25);
+        Apagar_jButton.setBounds(140, 420, 67, 23);
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Tipo De Poção");
         add(jLabel1);
         jLabel1.setBounds(140, 230, 120, 17);
         add(TipoDePocao_jTextField);
-        TipoDePocao_jTextField.setBounds(270, 230, 570, 19);
+        TipoDePocao_jTextField.setBounds(270, 230, 570, 20);
     }// </editor-fold>//GEN-END:initComponents
 
     private void Apagar_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Apagar_jButtonActionPerformed

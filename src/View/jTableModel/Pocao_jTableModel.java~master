@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package View.jTableModel;
 
-import Entidades.Iten;
+import Entidades.Pocao;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
@@ -13,13 +13,14 @@ import javax.swing.table.AbstractTableModel;
  *
  * @author pascal
  */
-public class Novoitem_jTableModel extends AbstractTableModel{
-    private List<Iten> lista;
+public class Pocao_jTableModel extends AbstractTableModel{
+   
+    private List<Pocao> lista;
     
     private static final String[] nomes = 
-            new String[]{"Id","Nome","Preço","Tipo","Descrição"};
+            new String[]{"Id","Nome","Preço","Quantidade","Descrição"};
     
-    public Novoitem_jTableModel(List<Iten> lista) {
+    public Pocao_jTableModel(List<Pocao> lista) {
         this.lista = lista;
     }
     public String getColumnName(int column) {
@@ -31,8 +32,8 @@ public class Novoitem_jTableModel extends AbstractTableModel{
      public int getColumnCount() {
         return 5;
     }
-      public Object getValueAt(int rowIndex, int columnIndex) {
-        Iten novoItem = lista.get(rowIndex);
+        public Object getValueAt(int rowIndex, int columnIndex) {
+        Pocao novoItem = lista.get(rowIndex);
         switch (columnIndex) {
             case 0:
                 return novoItem.getId();
@@ -43,10 +44,9 @@ public class Novoitem_jTableModel extends AbstractTableModel{
             case 3:
                 return novoItem.getQuantidade();
             case 4:
-                return novoItem.getDescricao();
+                return novoItem.getTipoDePocao();
              }
         return null;
-    }
-    
-    
+        }
 }
+

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package View.Cadastro;
 
 import java.awt.Image;
 import javax.swing.Icon;
@@ -105,7 +105,7 @@ public class CadastrarFuncionários extends javax.swing.JPanel {
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Formação");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(390, 30, 120, 22);
+        jLabel7.setBounds(390, 30, 120, 24);
 
         add(jPanel1);
         jPanel1.setBounds(-10, 90, 920, 130);
@@ -329,7 +329,7 @@ public class CadastrarFuncionários extends javax.swing.JPanel {
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Novo Funcionário");
         add(jLabel6);
-        jLabel6.setBounds(320, 30, 233, 29);
+        jLabel6.setBounds(320, 30, 206, 32);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
