@@ -2,3 +2,5 @@
 #ano : 2017
 #Ciência da computação, Faculdade Federal do Mato Grosso - Cuiaba;
 
+Descrição:MagicStore é um aplicativo de estoque de mercadoria com tema de RPG. O projeto não está pronto, mas é um projeto necessário para passar da disciplina de Alg 3.
+Nesse aplicativo, você cria um sistema para estocar mercadoria, criar novas e salvar em um banco de dados, onde também possuirá um caixa com atualizações a cada compra e venda de produtos.
